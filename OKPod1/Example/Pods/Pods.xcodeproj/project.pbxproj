@@ -723,28 +723,7 @@
 			};
 			name = Release;
 		};
-		50B2EEDA6FFABD9723CDE2602F1B4BEE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22DAEBAD1A7C10A6E5AA72817E942EC8 /* Pods-OKPod1_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		65126E50873AEC98279F046AA9DBD7FB /* Debug */ = {
+		0D522EC0876E905B8B05943484B970FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6AD0113F3B9A32E221406FCF5F56C8A /* OKPod1.debug.xcconfig */;
 			buildSettings = {
@@ -763,7 +742,27 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50B2EEDA6FFABD9723CDE2602F1B4BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DAEBAD1A7C10A6E5AA72817E942EC8 /* Pods-OKPod1_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -850,31 +849,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C338AEAEB880B7C082DED691F1B97061 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7089414A1A4E2821D775510F3A7443F2 /* OKPod1.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/OKPod1/OKPod1-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = Headers/Public/OKPod1/OKPod1.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = OKPod1;
-				PRODUCT_NAME = OKPod1;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -968,6 +942,30 @@
 			};
 			name = Debug;
 		};
+		D510B90746385984F0B38B942C93883A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7089414A1A4E2821D775510F3A7443F2 /* OKPod1.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OKPod1/OKPod1-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/OKPod1/OKPod1.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OKPod1;
+				PRODUCT_NAME = OKPod1;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		DE2EE82787B2ED7C1CEC20E49CC13514 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01D2DC0411F54E164AAF882F1FFE5911 /* Pods-OKPod1_Example.release.xcconfig */;
@@ -1048,8 +1046,8 @@
 		A83AF98BA1F84EBB571194C07B9B2FEB /* Build configuration list for PBXNativeTarget "OKPod1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65126E50873AEC98279F046AA9DBD7FB /* Debug */,
-				C338AEAEB880B7C082DED691F1B97061 /* Release */,
+				0D522EC0876E905B8B05943484B970FA /* Debug */,
+				D510B90746385984F0B38B942C93883A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

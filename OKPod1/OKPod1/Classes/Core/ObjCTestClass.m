@@ -6,7 +6,12 @@
 //
 
 #import "ObjCTestClass.h"
+#import <OKPod1-Swift.h>
 
 @implementation ObjCTestClass
+
+- (void)test {
+    
+}
 
 @end

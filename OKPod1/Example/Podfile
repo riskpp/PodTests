@@ -1,13 +1,49 @@
-#use_frameworks!
+#1
+use_frameworks!
 platform :ios, '10.0'
 
 target 'OKPod1_Example' do
-  pod 'OKPod1', :path => '../', :modular_headers => true
-  pod 'OKPod1/NotCore', :path => '../', :modular_headers => true
+  pod 'OKPod1', :path => '../'
+  pod 'OKPod1/NotCore', :path => '../'
 
   target 'OKPod1_Tests' do
     inherit! :search_paths
-
-    
   end
 end
+
+#2
+#platform :ios, '10.0'
+#
+#target 'OKPod1_Example' do
+#  pod 'OKPod1', :path => '../', :modular_headers => true
+#  pod 'OKPod1/NotCore', :path => '../', :modular_headers => true
+#
+#  target 'OKPod1_Tests' do
+#    inherit! :search_paths
+#  end
+#end
+
+#3
+#use_frameworks! :linkage => :static
+#platform :ios, '10.0'
+#
+#target 'OKPod1_Example' do
+#  pod 'OKPod1', :path => '../'
+#  pod 'OKPod1/NotCore', :path => '../'
+#
+#  target 'OKPod1_Tests' do
+#    inherit! :search_paths
+#  end
+#end
+
+#4
+#platform :ios, '10.0'
+#
+#target 'OKPod1_Example' do
+#  pod 'OKPod1', :path => '../'
+#  pod 'OKPod1/NotCore', :path => '../'
+#
+#  target 'OKPod1_Tests' do
+#    inherit! :search_paths
+#  end
+#end

@@ -16,11 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //Obj-c class from OKPod1
         let testClassInstance = ObjCTestClass()
-        testClassInstance.someProperty = "Test String"
+        testClassInstance.someProperty = "Obj-c class from OKPod1 available"
         print("\(testClassInstance.someProperty)")
-        let test = ObjCTestClass1()
-        // Override point for customization after application launch.
+        
+        //Method from OKPod1
+        let testSwiftClassInstance = Core1()
+        print(testSwiftClassInstance.test())
+        
         return true
     }
 

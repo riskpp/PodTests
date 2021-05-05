@@ -21,20 +21,18 @@ TODO: Add long description of the pod here.
   s.platform         = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5'
-#  s.requires_arc  = true
-#  s.pod_target_xcconfig =  {
-#      'SWIFT_VERSION' => '5',
-#      'OTHER_SWIFT_FLAGS[config=Debug]' => '-DDEBUG'
-#  }
+  s.requires_arc  = true
+  
+  s.pod_target_xcconfig =  {
+      'SWIFT_VERSION' => '5',
+      'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -DDEBUG'
+  }
   s.default_subspec = 'Core'
   
   # s.resource_bundles = {
   #   'OKPod1' => ['OKPod1/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'CocoaLumberjack/Swift'
   
   s.subspec 'Core' do |core|

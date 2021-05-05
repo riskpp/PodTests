@@ -19,8 +19,12 @@
     "ios": "9.0"
   },
   "swift_versions": "5",
+  "requires_arc": true,
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "5",
+    "OTHER_SWIFT_FLAGS[config=Debug]": "$(inherited) -DDEBUG"
+  },
   "default_subspecs": "Core",
-  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "CocoaLumberjack/Swift": [
 
