@@ -1,0 +1,45 @@
+{
+  "name": "OKPod1",
+  "version": "0.1.0",
+  "summary": "A short description of OKPod1.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/riskpp/OKPod1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "riskpp": "Olga.Koroleva@infobip.com"
+  },
+  "source": {
+    "git": "https://github.com/riskpp/OKPod1.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_versions": "5",
+  "default_subspecs": "Core",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "CocoaLumberjack/Swift": [
+
+    ]
+  },
+  "source_files": "OKPod1/Classes/Core/**/*.{h,m,swift}",
+  "subspecs": [
+    {
+      "name": "Core"
+    },
+    {
+      "name": "NotCore",
+      "dependencies": {
+        "OKPod1/Core": [
+
+        ]
+      },
+      "source_files": "OKPod1/Classes/NotCore/**/*.{h,m,swift}"
+    }
+  ],
+  "swift_version": "5"
+}

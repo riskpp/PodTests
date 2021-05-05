@@ -1,0 +1,13 @@
+#use_frameworks!
+platform :ios, '10.0'
+
+target 'OKPod1_Example' do
+  pod 'OKPod1', :path => '../', :modular_headers => true
+  pod 'OKPod1/NotCore', :path => '../', :modular_headers => true
+
+  target 'OKPod1_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

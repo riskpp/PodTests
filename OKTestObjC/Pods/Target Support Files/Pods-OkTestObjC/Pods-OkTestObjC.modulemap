@@ -1,0 +1,6 @@
+module Pods_OkTestObjC {
+  umbrella header "Pods-OkTestObjC-umbrella.h"
+
+  export *
+  module * { export * }
+}
