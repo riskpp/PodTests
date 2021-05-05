@@ -6,12 +6,18 @@
 //
 
 #import "ObjCTestClass.h"
-#import <OKPod1-Swift.h>
+
+//for static
+//#import <OKPod1-Swift.h>
+
+//for dynamic framework
+#import <OKPod1/OKPod1-Swift.h>
 
 @implementation ObjCTestClass
 
 - (void)test {
-    
+    SwiftTestClass* testClassInstance = [SwiftTestClass new];
+    NSLog(@"%@", [testClassInstance test]);
 }
 
 @end

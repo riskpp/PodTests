@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("\(testClassInstance.someProperty)")
         
         //Method from OKPod1
-        let testSwiftClassInstance = Core1()
+        let testSwiftClassInstance = SwiftTestClass()
         print(testSwiftClassInstance.test())
         
         return true

@@ -28,15 +28,14 @@ TODO: Add long description of the pod here.
       'OTHER_SWIFT_FLAGS[config=Debug]' => '$(inherited) -DDEBUG'
   }
   s.default_subspec = 'Core'
-  
-  # s.resource_bundles = {
-  #   'OKPod1' => ['OKPod1/Assets/*.png']
-  # }
 
   s.dependency 'CocoaLumberjack/Swift'
   
   s.subspec 'Core' do |core|
       s.source_files = 'OKPod1/Classes/Core/**/*.{h,m,swift}'
+      s.resource_bundles = {
+        'OKPod1' => ['OKPod1/Assets/*.xcassets']
+      }
   end
   
   s.subspec 'NotCore' do |ncore|
